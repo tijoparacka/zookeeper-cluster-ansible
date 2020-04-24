@@ -16,7 +16,7 @@ cd playbooks
 
 * **STEP-2**
 ```
-ansible-playbook -i hosts/cluster-hosts.ini cluster-setup.yml
+ansible-playbook -i hosts/cluster-hosts.ini -u <user eg ec2-user > --private-key <key path eg: ~/Documents/ec2.key> cluster-setup.yml
 ```
 # Supported/Tested OS
 * CentOS / Amazon Linux
