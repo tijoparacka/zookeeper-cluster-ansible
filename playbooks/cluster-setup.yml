@@ -9,6 +9,7 @@
 
 - name: Installing Zookeeper
   gather_facts: true
+  become: true
   hosts: zookeeper
   roles:
     - zookeeper-install
