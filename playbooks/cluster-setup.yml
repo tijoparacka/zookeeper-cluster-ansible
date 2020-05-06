@@ -1,6 +1,7 @@
 ---
 
 - name: Applying Common Tasks
+  become: true
   hosts: zookeeper
   roles:
     - common
